@@ -5,6 +5,7 @@
         </div> 
         <todo-form></todo-form> 
         <hr /> 
+        <todo-filter></todo-filter>
         <todo-list></todo-list> 
     </section>
 </template>
@@ -12,12 +13,14 @@
 <script>
 import TodoForm from './TodoForm'
 import TodoList from './TodoList'
+import TodoFilter from './TodoFilter'
 
 export default {
     name: 'TodoApp',
     components: {
         TodoForm,
-        TodoList
+        TodoList,
+        TodoFilter
     }
 }
 </script>
